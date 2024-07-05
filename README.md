@@ -35,7 +35,7 @@ Add an implementation to your `build.gradle` in the dependencies section:
 ```
 
 ## Implementation
-Create a `public static final` instance of the `ColorfulLogger` class. This instance will allow you to utilize the internal `private static final` reference of `org.slf4j.Logger` throughout your project.
+Create a `public static final` instance of the `ColorfulLogger` class. This instance will allow you to utilize the internal reference of `org.slf4j.Logger` from the `ColorfulLogger` class throughout your project.
 
 ```java
     import com.handsomesteve.api.ColorfulLogger;
