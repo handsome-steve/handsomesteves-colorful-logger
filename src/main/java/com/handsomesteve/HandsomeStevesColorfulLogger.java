@@ -15,11 +15,8 @@ public class HandsomeStevesColorfulLogger implements ModInitializer
 	@Override
 	public void onInitialize()
 	{
-		LOGGER.out("TEST MESSAGE");
-		LOGGER.out("I WANT GREEN TEXT",
-				AnsiColorText.ANSI_BRIGHT_GREEN);
-		LOGGER.out("I WANT ANOTHER GREEN TEXT, WITH A BACKGROUND",
-				AnsiColorText.ANSI_BRIGHT_RED,
-				AnsiColorBackground.ANSI_BLACK_BACK);
+		//LOGGER.info("TEST MESSAGE");
+		//LOGGER.info("I WANT GREEN TEXT", AnsiColorText.ANSI_BRIGHT_GREEN);
+		//LOGGER.info("I WANT ANOTHER GREEN TEXT, WITH A BACKGROUND", AnsiColorText.ANSI_BRIGHT_RED, AnsiColorBackground.ANSI_BLACK_BACK);
 	}
 }
