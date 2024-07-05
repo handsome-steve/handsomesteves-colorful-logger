@@ -1,8 +1,7 @@
 # Handsome Steve's Colorful Logger
-***
-### Ever wanted to add some color to your LOGGER during the development of your minecraft mods in a simple, yet functional manner?<br><br>
-Well look no further, Handsome Steve has you covered!<br>
-This simple library allows you to do just that by utilizing a wide range of pre-defined ANSI codes via an Enum.<br><br>
+
+### Ever wanted to add some color to your LOGGER during the development of your minecraft mods in a simple, yet functional manner?<br>
+Well look no further, Handsome Steve has you covered! This simple library allows you to do just that by utilizing a wide range of pre-defined ANSI codes.<br><br>
 
 ## Installation
 
@@ -26,7 +25,7 @@ Add an implementation to your `build.gradle` in the dependencies section:
         modImplementation "maven.modrinth:handsomesteves-colorful-logger:${project.handsomesteves_colorful_logger}"
     }
 ```
-> NOTE: Ensure that ***modImplementation*** is used, instead of ***implementation***, otherwise your mod will throw the following error at runtime:
+> NOTE: Ensure that ***modImplementation*** is used when declaring the dependency, instead of ***implementation***, otherwise your mod will throw the following error at runtime:
 >> *Namespace (intermediary) does not match current runtime namespace (named)*
 
 <br>Add the version variable to your `gradle.properties` and replace the version by the desired library version of your choice:
