@@ -29,7 +29,7 @@ Add an implementation to your `build.gradle` in the dependencies section:
 > 
 > [See: Modrinth - Dependency configuration](https://support.modrinth.com/en/articles/8801191-modrinth-maven#h_2484bbd424)
 
-<br>Add the version variable to your `gradle.properties` and replace the version by the desired library version of your choice:
+<br>Add the version variable to your `gradle.properties` and replace the version by the desired available library version of your choice:
 ```groovy
     handsomesteves_colorful_logger=1.0.0+1.21
 ```
