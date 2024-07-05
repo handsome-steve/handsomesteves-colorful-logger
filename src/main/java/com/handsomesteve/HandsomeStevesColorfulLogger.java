@@ -10,7 +10,7 @@ public class HandsomeStevesColorfulLogger implements ModInitializer
     //public static final Logger LOGGER = LoggerFactory.getLogger("handsomesteves-colorful-logger");
 	public static final String MOD_ID = "handsomesteves-colorful-logger";
 
-	public static final ColorfulLogger LOGGER = new ColorfulLogger("handsomesteves-colorful-logger", false);
+	//public static final ColorfulLogger LOGGER = new ColorfulLogger("handsomesteves-colorful-logger", false);
 
 	@Override
 	public void onInitialize()
