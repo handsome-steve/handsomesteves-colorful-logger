@@ -21,7 +21,7 @@ Add the Modrinth Maven Repository to your `build.gradle` in the repositories sec
 Add an implementation to your `build.gradle` in the dependencies section:
 ```groovy
     dependencies {
-        modImplementation "maven.modrinth:handsomesteves-colorful-logger:${project.handsomesteves_colorful_logger}"
+        modApi "maven.modrinth:handsomesteves-colorful-logger:${project.handsomesteves_colorful_logger}"
     }
 ```
 > **NOTE:** Ensure that ***modImplementation*** is used when declaring the dependency, instead of ***implementation***, otherwise your mod will throw the following error at runtime:
