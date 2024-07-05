@@ -27,7 +27,7 @@ Add an implementation to your `build.gradle` in the dependencies section:
 > **NOTE:** Ensure that ***modApi*** is used when declaring the dependency, instead of ***api***, otherwise your mod will throw the following error at runtime:
 >> *Namespace (intermediary) does not match current runtime namespace (named)*
 > 
-> [See: Modrinth - Dependency configuration]("https://support.modrinth.com/en/articles/8801191-modrinth-maven#h_2484bbd424")
+[See: Modrinth - Dependency configuration]("https://support.modrinth.com/en/articles/8801191-modrinth-maven#h_2484bbd424")
 
 <br>Add the version variable to your `gradle.properties` and replace the version by the desired library version of your choice:
 ```groovy
