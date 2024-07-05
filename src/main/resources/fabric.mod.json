@@ -3,23 +3,24 @@
 	"id": "handsomesteves-colorful-logger",
 	"version": "${version}",
 	"name": "HandsomeSteve's Colorful Logger",
-	"description": "A simple library to add colors to your Logger calls.",
+	"description": "A simple library to add colors to your Logger calls!",
 	"authors": [
 		"handsome-steve"
 	],
 	"contact": {
-		"homepage": "https://fabricmc.net/",
-		"sources": "https://github.com/FabricMC/fabric-example-mod"
+		"homepage": "https://github.com/handsome-steve/handsomesteves-colorful-logger",
+		"sources": "https://github.com/handsome-steve/handsomesteves-colorful-logger"
 	},
 	"license": "CC0-1.0",
 	"icon": "assets/handsomesteves-colorful-logger/icon.png",
+	"accessWidener" : "handsomesteves-colorful-logger.accesswidener",
 	"environment": "*",
 	"entrypoints": {
 		"main": [
 			"com.handsomesteve.HandsomeStevesColorfulLogger"
 		]
 	},
-	"mixins": [	],
+	"mixins": [],
 	"depends": {
 		"fabricloader": ">=0.15.11",
 		"minecraft": "~1.21",
