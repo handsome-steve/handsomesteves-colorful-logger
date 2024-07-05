@@ -18,14 +18,18 @@ Add the Modrinth Maven Repository to your `build.gradle` in the repositories sec
         }
     }
 ```
+<br>
+
 Add an implementation to your `build.gradle` in the dependencies section:
-#### WARNING: Ensure that 'modImplementation' is used,
 ```groovy
     dependencies {
         modImplementation "maven.modrinth:handsomesteves-colorful-logger:${project.handsomesteves_colorful_logger}"
     }
 ```
-Add the version variable to your `gradle.properties` and replace the version by the desired library version of your choice:
+> NOTE: Ensure that ***modImplementation*** is used, instead of ***implementation***, otherwise your mod will throw the following error at runtime:
+>> *Namespace (intermediary) does not match current runtime namespace (named)*
+
+<br>Add the version variable to your `gradle.properties` and replace the version by the desired library version of your choice:
 ```groovy
     handsomesteves_colorful_logger=1.0.0+1.21
 ```
