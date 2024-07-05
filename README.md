@@ -54,4 +54,6 @@ Create a `public static final` instance of the `ColorfulLogger` class. This inst
     }
 ```
 > **NOTE:** `ColorfulLogger` can be declared anywhere in the project. It is recommended to import the declared variable as a *static import*:
->> `import static com.packagename.FabricMod.LOGGER;`
+>> ```java
+>> import static com.packagename.FabricMod.LOGGER;
+>>```
