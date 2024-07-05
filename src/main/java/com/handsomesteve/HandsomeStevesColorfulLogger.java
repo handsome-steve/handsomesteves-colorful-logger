@@ -1,22 +1,25 @@
 package com.handsomesteve;
 
+import com.handsomesteve.api.ColorfulLogger;
+import com.handsomesteve.api.ansi.AnsiColorBackground;
+import com.handsomesteve.api.ansi.AnsiColorText;
 import net.fabricmc.api.ModInitializer;
 
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
+public class HandsomeStevesColorfulLogger implements ModInitializer
+{
+    //public static final Logger LOGGER = LoggerFactory.getLogger("handsomesteves-colorful-logger");
+	public static final String MOD_ID = "handsomesteves-colorful-logger";
 
-public class HandsomeStevesColorfulLogger implements ModInitializer {
-	// This logger is used to write text to the console and the log file.
-	// It is considered best practice to use your mod id as the logger's name.
-	// That way, it's clear which mod wrote info, warnings, and errors.
-    public static final Logger LOGGER = LoggerFactory.getLogger("handsomesteves-colorful-logger");
+	public static final ColorfulLogger LOGGER = new ColorfulLogger("handsomesteves-colorful-logger", false);
 
 	@Override
-	public void onInitialize() {
-		// This code runs as soon as Minecraft is in a mod-load-ready state.
-		// However, some things (like resources) may still be uninitialized.
-		// Proceed with mild caution.
-
-		LOGGER.info("Hello Fabric world!");
+	public void onInitialize()
+	{
+		LOGGER.out("TEST MESSAGE");
+		LOGGER.out("I WANT GREEN TEXT",
+				AnsiColorText.ANSI_BRIGHT_GREEN);
+		LOGGER.out("I WANT ANOTHER GREEN TEXT, WITH A BACKGROUND",
+				AnsiColorText.ANSI_BRIGHT_RED,
+				AnsiColorBackground.ANSI_BLACK_BACK);
 	}
 }

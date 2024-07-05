@@ -3,9 +3,9 @@
 	"id": "handsomesteves-colorful-logger",
 	"version": "${version}",
 	"name": "HandsomeSteve's Colorful Logger",
-	"description": "This is an example description! Tell everyone what your mod is about!",
+	"description": "A simple library to add colors to your Logger calls.",
 	"authors": [
-		"Me!"
+		"handsome-steve"
 	],
 	"contact": {
 		"homepage": "https://fabricmc.net/",
@@ -19,9 +19,7 @@
 			"com.handsomesteve.HandsomeStevesColorfulLogger"
 		]
 	},
-	"mixins": [
-		"handsomesteves-colorful-logger.mixins.json"
-	],
+	"mixins": [	],
 	"depends": {
 		"fabricloader": ">=0.15.11",
 		"minecraft": "~1.21",
