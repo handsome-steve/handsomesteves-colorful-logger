@@ -7,22 +7,28 @@ Well look no further, Handsome Steve has you covered! This simple library allows
 Add the Modrinth Maven Repository to your `build.gradle` in the repositories section:
 ```groovy
     repositories {
-        maven {
-            name = 'Modrinth'
-            url = 'https://api.modrinth.com/maven'
-            content {
-                includeGroup 'maven.modrinth'
+    exclusiveContent {
+        forRepository {
+            maven {
+                name = "Modrinth"
+                url = "https://api.modrinth.com/maven"
             }
         }
+        filter {
+            includeGroup "maven.modrinth"
+        }
     }
+}
 ```
 <br>
 
 Add an implementation to your `build.gradle` in the dependencies section:
 ```groovy
     dependencies {
-        modApi "maven.modrinth:handsomesteves-colorful-logger:${project.handsomesteves_colorful_logger}"
-    }
+    modApi "maven.modrinth:colorfulloggerlib:${project.handsomesteves_colorful_logger}"
+    // SOURCES FILE NEEDS MANUAL DOWNLOAD, SEE BOTTOM OF PAGE
+    //modApi "maven.modrinth:colorfulloggerlib:${project.handsomesteves_colorful_logger}:sources"
+}
 ```
 > **NOTE:** Ensure that ***modApi*** is used when declaring the dependency, instead of ***api***, otherwise your mod will throw the following error at runtime:
 >> *Namespace (intermediary) does not match current runtime namespace (named)*
@@ -54,10 +60,15 @@ Create a `public static final` instance of the `ColorfulLogger` class. This inst
        }
     }
 ```
-> **NOTE:** `ColorfulLogger` can be declared anywhere in the project. It is recommended to import the declared variable as a *static import*:
+> **NOTE:** `ColorfulLogger` can be declared anywhere in the project. It is recommended, however, to import the declared variable as a *static import* when referencing the instantiated instance:
 >> ```java
 >> import static com.packagename.FabricMod.LOGGER;
 >> ```
 
-## JavaDocs
-The maven provides a well documented javadoc for the library, all variables, methods and constructors are well-defined as well as the class itself.
+## Sources
+***While I try and figure out how to get Modrinth to add the sources file to their Maven, there is a sources file available in the versions download.***<br>
+This is a well define sources file where all variables, methods and constructors are well-defined as well as the class itself.
+You should download and add this file in the folder path:
+```
+.gradle/loom-cache/remapped_mods/net_fabricmc_yarn{version}/maven/ccolorfulloggerlib/1.0.0+1.21/
+```
