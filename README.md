@@ -1,7 +1,7 @@
 # Handsome Steve's Colorful Logger
 
 #### Ever wanted to add some color to your LOGGER during the development of your minecraft mods in a simple, yet functional manner?<br>
-Well look no further, Handsome Steve has you covered! This simple library allows you to do just that by utilizing a wide range of pre-defined ANSI codes.<br><br>
+Well look no further, Handsome Steve has you covered! This simple library allows you to do just that by utilizing a wide range of pre-defined ANSI codes.<br>
 
 ## Installation
 Add the Modrinth Maven Repository to your `build.gradle` in the repositories section:
@@ -64,6 +64,12 @@ Create a `public static final` instance of the `ColorfulLogger` class. This inst
 >> ```java
 >> import static com.packagename.FabricMod.LOGGER;
 >> ```
+
+If required, the `Logger` can be interfaced with by calling it as follows:
+```java
+    LOGGER.getLogger(); // Returns the Logger to be interfaced with.
+```
+This will, however, not implement the ANSI color coding to your output if accessed this way.<br>
 
 ## Sources
 ***While I try and figure out how to get Modrinth to add the sources file to their Maven, there is a sources file available in the versions download.***<br>
