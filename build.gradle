@@ -11,7 +11,7 @@ base {
 }
 
 loom {
-	accessWidenerPath = file("src/main/resources/handsomesteves-colorful-logger.accesswidener")
+	accessWidenerPath = file("src/main/resources/colorfulloggerlib.accesswidener")
 }
 
 repositories {

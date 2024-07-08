@@ -8,7 +8,7 @@ import net.fabricmc.api.ModInitializer;
 public class HandsomeStevesColorfulLogger implements ModInitializer
 {
     //public static final Logger LOGGER = LoggerFactory.getLogger("handsomesteves-colorful-logger");
-	public static final String MOD_ID = "handsomesteves-colorful-logger";
+	public static final String MOD_ID = "colorfulloggerlib";
 
 	//public static final ColorfulLogger LOGGER = new ColorfulLogger("handsomesteves-colorful-logger", false);
 

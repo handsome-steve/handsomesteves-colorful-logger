@@ -1,6 +1,6 @@
 {
 	"schemaVersion": 1,
-	"id": "handsomesteves-colorful-logger",
+	"id": "colorfulloggerlib",
 	"version": "${version}",
 	"name": "HandsomeSteve's Colorful Logger",
 	"description": "A simple library to add colors to your Logger calls!",
@@ -12,8 +12,8 @@
 		"sources": "https://github.com/handsome-steve/handsomesteves-colorful-logger"
 	},
 	"license": "CC0-1.0",
-	"icon": "assets/handsomesteves-colorful-logger/icon.png",
-	"accessWidener" : "handsomesteves-colorful-logger.accesswidener",
+	"icon": "assets/colorfulloggerlib/icon.png",
+	"accessWidener" : "colorfulloggerlib.accesswidener",
 	"environment": "*",
 	"entrypoints": {
 		"main": [
