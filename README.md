@@ -7,18 +7,18 @@ Well look no further, Handsome Steve has you covered! This simple library allows
 Add the Modrinth Maven Repository to your `build.gradle` in the repositories section:
 ```groovy
     repositories {
-    exclusiveContent {
-        forRepository {
-            maven {
-                name = "Modrinth"
-                url = "https://api.modrinth.com/maven"
+        exclusiveContent {
+            forRepository {
+                maven {
+                    name = "Modrinth"
+                    url = "https://api.modrinth.com/maven"
+                }
+            }
+            filter {
+                includeGroup "maven.modrinth"
             }
         }
-        filter {
-            includeGroup "maven.modrinth"
-        }
     }
-}
 ```
 <br>
 
