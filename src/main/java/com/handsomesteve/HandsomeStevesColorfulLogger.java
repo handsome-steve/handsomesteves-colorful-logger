@@ -4,13 +4,14 @@ import com.handsomesteve.api.ColorfulLogger;
 import com.handsomesteve.api.ansi.AnsiColorBackground;
 import com.handsomesteve.api.ansi.AnsiColorText;
 import net.fabricmc.api.ModInitializer;
+import org.slf4j.Marker;
 
 public class HandsomeStevesColorfulLogger implements ModInitializer
 {
     //public static final Logger LOGGER = LoggerFactory.getLogger("handsomesteves-colorful-logger");
 	public static final String MOD_ID = "colorfulloggerlib";
 
-	//public static final ColorfulLogger LOGGER = new ColorfulLogger("handsomesteves-colorful-logger", false);
+	public static final ColorfulLogger LOGGER = new ColorfulLogger("handsomesteves-colorful-logger", false);
 
 	@Override
 	public void onInitialize()

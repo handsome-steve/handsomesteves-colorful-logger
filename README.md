@@ -28,6 +28,9 @@ Add an implementation to your `build.gradle` in the dependencies section:
     modApi "maven.modrinth:colorfulloggerlib:${project.handsomesteves_colorful_logger}"
     // SOURCES FILE NEEDS MANUAL DOWNLOAD, SEE BOTTOM OF PAGE
     //modApi "maven.modrinth:colorfulloggerlib:${project.handsomesteves_colorful_logger}:sources"
+    
+    // Embed the API into your mod so users do not have to manually download it here.
+    include "maven.modrinth:colorfulloggerlib:${project.handsomesteves_colorful_logger}"
 }
 ```
 > **NOTE:** Ensure that ***modApi*** is used when declaring the dependency, instead of ***api***, otherwise your mod will throw the following error at runtime:
