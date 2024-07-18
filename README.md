@@ -1,6 +1,6 @@
 # Handsome Steve's Colorful Logger
 
-##[PROJECT MIGRATED TO HERE](https://github.com/handsome-steve/colorfulloggerlib)
+## [PROJECT MIGRATED TO HERE](https://github.com/handsome-steve/colorfulloggerlib)
 
 #### Ever wanted to add some color to your LOGGER during the development of your minecraft mods in a simple, yet functional manner?<br>
 Well look no further, Handsome Steve has you covered! This simple library allows you to do just that by utilizing a wide range of pre-defined ANSI codes.<br>
