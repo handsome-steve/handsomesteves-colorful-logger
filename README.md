@@ -27,15 +27,14 @@ Add the Modrinth Maven Repository to your `build.gradle` in the repositories sec
 Add an implementation to your `build.gradle` in the dependencies section:
 ```groovy
     dependencies {
-    modApi "maven.modrinth:colorfulloggerlib:${project.handsomesteves_colorful_logger}"
+        modImplementation "maven.modrinth:colorfulloggerlib:${project.handsomesteves_colorful_logger}"
     // SOURCES FILE NEEDS MANUAL DOWNLOAD, SEE BOTTOM OF PAGE
-    //modApi "maven.modrinth:colorfulloggerlib:${project.handsomesteves_colorful_logger}:sources"
     
-    // Embed the API into your mod so users do not have to manually download it here.
-    include "maven.modrinth:colorfulloggerlib:${project.handsomesteves_colorful_logger}"
-}
+    // Embed the Library into your mod so users do not have to manually download it here.
+        include "maven.modrinth:colorfulloggerlib:${project.handsomesteves_colorful_logger}"
+    }
 ```
-> **NOTE:** Ensure that ***modApi*** is used when declaring the dependency, instead of ***api***, otherwise your mod will throw the following error at runtime:
+> **NOTE:** Ensure that ***modImplementation*** is used when declaring the dependency, instead of ***implementation***, otherwise your mod will throw the following error at runtime:
 >> *Namespace (intermediary) does not match current runtime namespace (named)*
 > 
 > [See: Modrinth - Dependency configuration](https://support.modrinth.com/en/articles/8801191-modrinth-maven#h_2484bbd424)
@@ -66,9 +65,9 @@ Create a `public static final` instance of the `ColorfulLogger` class. This inst
     }
 ```
 > **NOTE:** `ColorfulLogger` can be declared anywhere in the project. It is recommended, however, to import the declared variable as a *static import* when referencing the instantiated instance:
->> ```java
->> import static com.packagename.FabricMod.LOGGER;
->> ```
+> ```java
+> import static com.packagename.FabricMod.LOGGER;
+> ```
 
 If required, the `Logger` can be interfaced with by calling it as follows:
 ```java
